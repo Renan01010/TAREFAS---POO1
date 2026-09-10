@@ -15,5 +15,7 @@ public class Principal {
         meuRetangulo.largura = 50;
         System.out.println("A area do meu retângulo é = " + 
         meuRetangulo.area());
+        
+        //Está errado pois não instanciado o new ao criar um objeto
     }    
 }
