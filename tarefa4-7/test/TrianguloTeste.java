@@ -58,5 +58,26 @@ public class TrianguloTeste {
         assertTrue(resultado);
                 
     }
+    @Test
+    public void TrinaguloTeste4(){
+        Triangulo isoceles = new Triangulo();
+        isoceles.setLado1(7);
+        isoceles.setLado2(12);
+        isoceles.setLado3(12);
+        
+        String tipoTriangulo = isoceles.verificaTriangulo();
+        assertEquals("Triangulo Isoceles", tipoTriangulo);        
+    }
+    
+    @Test
+    public void TrinaguloTeste5(){
+        Triangulo equilatero = new Triangulo();
+        equilatero.setLado1(12);
+        equilatero.setLado2(12);
+        equilatero.setLado3(12);
+        
+        String tipoTriangulo = equilatero.verificaTriangulo();
+        assertEquals("Trinagulo Equilatero e tambem Isoceles", tipoTriangulo);        
+    }
     
 }

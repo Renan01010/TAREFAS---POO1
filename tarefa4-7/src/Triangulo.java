@@ -45,5 +45,17 @@ public class Triangulo {
         }
         return false;      
     }
+
+    public String verificaTriangulo() {
+       if(this.ehEquilatero() == true){
+          return "Trinagulo Equilatero e tambem Isoceles";
+       } else if(this.ehIsosceles()){
+           return "Triangulo Isoceles";
+       } else if(this.ehEscaleno()){
+           return "Triangulo Escaleno";
+       }
+       
+       return "Não e um triangulo valido";
+    }
    
 }
