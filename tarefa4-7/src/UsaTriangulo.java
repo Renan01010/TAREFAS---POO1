@@ -30,6 +30,8 @@ public class UsaTriangulo {
             scn.next();
         }
         
+        isoceles = null;
+        System.gc();
         
         
     }

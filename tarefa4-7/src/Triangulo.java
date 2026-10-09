@@ -57,5 +57,9 @@ public class Triangulo {
        
        return "Não e um triangulo valido";
     }
+    
+    protected void finalize(){
+        System.out.println("Objeto finalizado...");
+    }
    
 }
