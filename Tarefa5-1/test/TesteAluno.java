@@ -30,12 +30,19 @@ public class TesteAluno {
                           "Disciplinas Matriculadas: Gestão de Projetos; LPOO\n" +
                           "---------------------------------------------------------";
         System.out.println(aluno1.imprime());
-        System.out.println(esperada);
-        
-        
-        
-        
-        assertEquals(esperada, aluno1.imprime());
+        System.out.println(esperada);        
+        assertEquals(esperada, aluno1.imprime());        
+    }
+    
+    @Test
+    public void TesteAluno2(){
+        Aluno aluno2 = new Aluno("Rafael Romualdo Wandresen", "GRR20130101", "TADS", 4, 20, 5);
+        cadastrarAluno(aluno2);
+        excluirAlunoPorNome("Rafael Romualdo Wandresen");
+        listarAlunos();
+        matricularAlunoEmDisciplina(aluno2, "LPOO");
+        cancelarMatricula(aluno2,"LPOO");
+        imprimirListaDeAlunoseDisciplinas();
         
     }
     
