@@ -67,6 +67,10 @@ public class Aluno {
     public ArrayList<String> getDisciplinasMatriculadas() {
         return disciplinasMatriculadas;
     }
+
+    String getNome() {
+        return this.nome;
+    }
     
     
     
