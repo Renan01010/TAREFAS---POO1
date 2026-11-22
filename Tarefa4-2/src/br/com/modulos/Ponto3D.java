@@ -29,47 +29,47 @@ public class Ponto3D {
         this.intensidade = intensidade;
     }
 
-    public int getX() {
+    protected int getX() {
         return x;
     }
 
-    public void setX(int x) {
+    protected void setX(int x) {
         this.x = x;
     }
 
-    public int getY() {
+    protected int getY() {
         return y;
     }
 
-    public void setY(int y) {
+    protected void setY(int y) {
         this.y = y;
     }
 
-    public int getZ() {
+    protected int getZ() {
         return z;
     }
 
-    public void setZ(int z) {
+    protected void setZ(int z) {
         this.z = z;
     }
 
-    public String getCor() {
+    protected String getCor() {
         return cor;
     }
 
-    public void setCor(String cor) {
+    protected void setCor(String cor) {
         this.cor = cor;
     }
 
-    public double getIntensidade() {
+    protected double getIntensidade() {
         return intensidade;
     }
 
-    public void setIntensidade(double intensidade) {
+    protected void setIntensidade(double intensidade) {
         this.intensidade = intensidade;
     }
 
-    public double calculaDistancia(Ponto3D p) {
+    protected double calculaDistancia(Ponto3D p) {
         int difeX = this.x - p.x;
         int difeY = this.y - p.y;
         int difeZ = this.z - p.z;
